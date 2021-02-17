@@ -1,0 +1,41 @@
+ALGORITHM linear
+VAR
+m: ARRAY_OF INTEGER[K][L];
+i,j: INTEGER;
+sum:INTEGER;
+BEGIN
+FOR i FROM 0 TO K-1  DO
+FOR j FROM 0 TO L-1  DO
+IF (m[i]<> m[j]) THEN
+sum = sum + m [i]
+i:= i +1
+END_IF
+END_FOR
+END_FOR
+
+
+
+END
+
+
+ALGORITHM linear2
+VAR
+j: ARRAY_OF INTEGER[];
+k : ARRAY_OF INTEGER[];
+i,m:INTEGER
+sum:INTEGER
+l: ARRAY_OF INTEGER[];
+BEGIN
+
+FOR i FROM 0 TO j.length -1  DO
+FOR m FROM 0 TO k.length -1  DO
+WHILE (j[i] = m [k]) DO
+sum:= j[i] + m[k]
+l:= j[i]
+i:= i+1
+END_WHILE
+END_FOR
+END_FOR
+
+
+END
